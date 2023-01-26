@@ -1,0 +1,25 @@
+.light {
+  --color-text-base: #121718;
+  --color-text-secondary: #999999;
+  --color-text-button: #fafafc;
+  --color-bg: #E5E5E5;
+  --color-card: #fafafc;
+  --color-input: #d9d9d9;
+  --coffee: #a25f47;
+}
+
+.dark {
+  --color-bg: #282b30;
+  --color-input: #424549;
+  --color-text-base: #e5e5e5;
+  --color-text-button: #fafafc;
+  --color-text-secondary: #6b686a;
+  --color-card: #36393e;
+  --coffee: #a25f47;
+}
+
+:root {
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-full: 50%;
+}

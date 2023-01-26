@@ -1,0 +1,25 @@
+version: '3.9'
+
+services:
+  app:
+    build:
+      context: ./back
+      target: dev
+    volumes:
+      - .:/src
+    command: npm run start:dev
+    restart: always
+    ports:
+      - 3020:3020
+    depends_on:
+      - mongo
+  client:
+    build:
+      context: ./client
+    ports:
+      - 8080:8080
+  mongo:
+    image: mongo:latest
+    restart: always
+    ports:
+      - 27017:27017
